@@ -1,0 +1,97 @@
+
+body{
+  overflow: hidden;
+  padding: 0%;
+  margin: 0%;
+}
+
+#section1{
+  // width: 100%;
+  margin: auto;
+  // border: 10px solid red;
+  height: 100vh;
+  position: relative;
+
+  button{
+    position: absolute;
+    left: 0;
+    top: 21%;
+    border: 1px solid red;
+    width:70px;
+    z-index: 10;
+    height: 70px;
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: yellow;
+    transform: rotate(-90deg);
+    transition: 0.5s ease-in-out;
+
+    &.myp-active{
+      transform: rotate(0);
+    }
+  }
+  .pizza{
+    left: -4.7%;
+    top:-5%;
+    // transform: translate(-50%,-50%);
+    position: absolute;
+    width: 13%;
+    height: 50%;
+    // border: 2px solid green;
+    transform: scale(0) rotate(-90deg);
+    transition: 0.5s ease-in-out;
+    &.scale-active{
+      transform: scale(1) rotate(0);
+      left: 0%;
+      top: 0%;
+    }
+    .pizza-box{
+      width: 100%;
+      height: 100%;
+      position: relative;
+      // border: 1px solid red;
+      .box{
+        position: absolute;
+        // border: 2px solid green;
+        width: 70px;
+        height: 70px;
+        img{
+          width: 100%;
+          height: 100%;
+          padding: 0;
+          margin: 0%;
+          border-radius: 100%;
+          transition: 0.7s ease-in-out;
+          transform: rotate(-180deg);
+          &.img-active{
+            transform: rotate(0);
+          }
+        }
+        &.box1{
+          left: 0px;
+          top: 0%;
+        }
+        &.box2{
+          left: 80px;
+          top: 60px;
+        }
+        &.box3{
+          left: 120px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        &.box4{
+          left: 80px;
+          bottom: 60px;
+        }
+        &.box5{
+          left: 0px;
+          bottom: 0px;
+        }
+      }
+    }
+  }
+}

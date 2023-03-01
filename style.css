@@ -1,0 +1,88 @@
+body {
+  overflow: hidden;
+  padding: 0%;
+  margin: 0%;
+}
+
+#section1 {
+  margin: auto;
+  height: 100vh;
+  position: relative;
+}
+#section1 button {
+  position: absolute;
+  left: 0;
+  top: 21%;
+  border: 1px solid red;
+  width: 70px;
+  z-index: 10;
+  height: 70px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: yellow;
+  transform: rotate(-90deg);
+  transition: 0.5s ease-in-out;
+}
+#section1 button.myp-active {
+  transform: rotate(0);
+}
+#section1 .pizza {
+  left: -4.7%;
+  top: -5%;
+  position: absolute;
+  width: 13%;
+  height: 50%;
+  transform: scale(0) rotate(-90deg);
+  transition: 0.5s ease-in-out;
+}
+#section1 .pizza.scale-active {
+  transform: scale(1) rotate(0);
+  left: 0%;
+  top: 0%;
+}
+#section1 .pizza .pizza-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#section1 .pizza .pizza-box .box {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+}
+#section1 .pizza .pizza-box .box img {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0%;
+  border-radius: 100%;
+  transition: 0.7s ease-in-out;
+  transform: rotate(-180deg);
+}
+#section1 .pizza .pizza-box .box img.img-active {
+  transform: rotate(0);
+}
+#section1 .pizza .pizza-box .box.box1 {
+  left: 0px;
+  top: 0%;
+}
+#section1 .pizza .pizza-box .box.box2 {
+  left: 80px;
+  top: 60px;
+}
+#section1 .pizza .pizza-box .box.box3 {
+  left: 120px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#section1 .pizza .pizza-box .box.box4 {
+  left: 80px;
+  bottom: 60px;
+}
+#section1 .pizza .pizza-box .box.box5 {
+  left: 0px;
+  bottom: 0px;
+}/*# sourceMappingURL=style.css.map */
